@@ -1,12 +1,12 @@
 #line graph
 par(mfrow = c(1,1))
 gp_levels <- levels(PlantGrowth$group)
-group_len=length(gp_levels)
+group_len <- length(gp_levels)
 
 xrange <- range(1:nrow(PlantGrowth)/group_len) 
 yrange <- range(PlantGrowth$weight)
 
-df_tilte <-"PlantGrowth Data"
+df_tilte <- "PlantGrowth Data"
 
 plot(xrange, yrange, type="n", xlab="Cases", ylab="Dried weight of plants", las=1, main = df_tilte ) 
 
